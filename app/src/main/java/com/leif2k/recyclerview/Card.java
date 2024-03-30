@@ -4,10 +4,12 @@ public class Card {
 
     private int image;
     private String text;
+    private int id;
 
-    public Card(int image, String text) {
+    public Card(int image, String text, int id) {
         this.image = image;
         this.text = text;
+        this.id = id;
     }
 
     public int getImage() {
@@ -16,6 +18,10 @@ public class Card {
 
     public String getText() {
         return text;
+    }
+
+    public int getId() {
+        return id;
     }
 
 }
